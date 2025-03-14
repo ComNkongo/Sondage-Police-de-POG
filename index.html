@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sondage sur le fonctionnement des forces de police nationale</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>NKONGÔ</h1>
+            <h3>Collectif Citoyen pour la Luttre contre la Vie Chère dans L'Ogooué-Maritime</h3>
+            <img src="img/Logo Final 2.png" alt="Logo" class="logo">
+            <h1 class="headline">Sondage sur le fonctionnement des forces de police nationale</h1>
+            <p class="subheadline">Nous vous remercions de prendre le temps de remplir ce sondage. Votre avis est essentiel pour améliorer le fonctionnement des forces de police nationale.</p>
+        </div>
+
+        <form action="https://formspree.io/f/xyzezylb" method="post" enctype="multipart/form-data" class="glassmorphism-form">
+            <fieldset>
+                <legend>Informations Générales</legend>
+                <label for="age">Âge :</label><br>
+                <input type="number" id="age" name="age" required><br><br>
+
+                <label>Sexe :</label><br>
+                <input type="radio" id="homme" name="sexe" value="Homme" required>
+                <label for="homme">Homme</label><br>
+                <input type="radio" id="femme" name="sexe" value="Femme" required>
+                <label for="femme">Femme</label><br>
+                <input type="radio" id="autre" name="sexe" value="Autre" required>
+                <label for="autre">Autre</label><br><br>
+
+                <label for="region">Région de résidence :</label><br>
+                <input type="text" id="region" name="region" required><br><br>
+
+                <label for="profession">Profession :</label><br>
+                <input type="text" id="profession" name="profession" required><br><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Perception Générale de la Police</legend>
+                <label for="efficacite">Comment évaluez-vous l’efficacité de la police nationale ?</label><br>
+                <input type="radio" id="tres_efficace" name="efficacite" value="Très efficace" required>
+                <label for="tres_efficace">Très efficace</label><br>
+                <input type="radio" id="efficace" name="efficacite" value="Efficace" required>
+                <label for="efficace">Efficace</label><br>
+                <input type="radio" id="moyenne" name="efficacite" value="Moyenne" required>
+                <label for="moyenne">Moyenne</label><br>
+                <input type="radio" id="peu_efficace" name="efficacite" value="Peu efficace" required>
+                <label for="peu_efficace">Peu efficace</label><br>
+                <input type="radio" id="pas_du_tout_efficace" name="efficacite" value="Pas du tout efficace" required>
+                <label for="pas_du_tout_efficace">Pas du tout efficace</label><br><br>
+
+                <label>Avez-vous déjà été en contact direct avec la police nationale ?</label><br>
+                <input type="radio" id="contact_oui" name="contact" value="Oui" required>
+                <label for="contact_oui">Oui</label><br>
+                <input type="radio" id="contact_non" name="contact" value="Non" required>
+                <label for="contact_non">Non</label><br><br>
+
+                <label for="experience">Si oui, comment évalueriez-vous votre expérience ?</label><br>
+                <input type="radio" id="tres_satisfaisante" name="experience" value="Très satisfaisante" required>
+                <label for="tres_satisfaisante">Très satisfaisante</label><br>
+                <input type="radio" id="satisfaisante" name="experience" value="Satisfaisante" required>
+                <label for="satisfaisante">Satisfaisante</label><br>
+                <input type="radio" id="neutre" name="experience" value="Neutre" required>
+                <label for="neutre">Neutre</label><br>
+                <input type="radio" id="insatisfaisante" name="experience" value="Insatisfaisante" required>
+                <label for="insatisfaisante">Insatisfaisante</label><br>
+                <input type="radio" id="tres_insatisfaisante" name="experience" value="Très insatisfaisante" required>
+                <label for="tres_insatisfaisante">Très insatisfaisante</label><br><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Relations Police - Population</legend>
+                <label for="accessibilite">Pensez-vous que la police est accessible et à l’écoute des citoyens ?</label><br>
+                <input type="radio" id="oui_tout_a_fait" name="accessibilite" value="Oui, tout à fait" required>
+                <label for="oui_tout_a_fait">Oui, tout à fait</label><br>
+                <input type="radio" id="oui_en_partie" name="accessibilite" value="Oui, en partie" required>
+                <label for="oui_en_partie">Oui, en partie</label><br>
+                <input type="radio" id="non_pas_vraiment" name="accessibilite" value="Non, pas vraiment" required>
+                <label for="non_pas_vraiment">Non, pas vraiment</label><br>
+                <input type="radio" id="non_pas_du_tout" name="accessibilite" value="Non, pas du tout" required>
+                <label for="non_pas_du_tout">Non, pas du tout</label><br><br>
+
+                <label for="confiance">Avez-vous confiance en la police nationale pour assurer votre sécurité ?</label><br>
+                <input type="radio" id="oui_totalement" name="confiance" value="Oui, totalement" required>
+                <label for="oui_totalement">Oui, totalement</label><br>
+                <input type="radio" id="oui_partiellement" name="confiance" value="Oui, partiellement" required>
+                <label for="oui_partiellement">Oui, partiellement</label><br>
+                <input type="radio" id="non_pas_vraiment" name="confiance" value="Non, pas vraiment" required>
+                <label for="non_pas_vraiment">Non, pas vraiment</label><br>
+                <input type="radio" id="non_pas_du_tout" name="confiance" value="Non, pas du tout" required>
+                <label for="non_pas_du_tout">Non, pas du tout</label><br><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Problèmes et Améliorations</legend>
+                <label for="problemes">Quels sont, selon vous, les principaux problèmes rencontrés dans le fonctionnement de la police nationale ? (Cochez tout ce qui s’applique)</label><br>
+                <input type="checkbox" id="corruption" name="problemes" value="Corruption">
+                <label for="corruption">Corruption</label><br>
+                <input type="checkbox" id="lenteur" name="problemes" value="Lenteur des interventions">
+                <label for="lenteur">Lenteur des interventions</label><br>
+                <input type="checkbox" id="manque_professionnalisme" name="problemes" value="Manque de professionnalisme">
+                <label for="manque_professionnalisme">Manque de professionnalisme</label><br>
+                <input type="checkbox" id="violence" name="problemes" value="Violence policière">
+                <label for="violence">Violence policière</label><br>
+                <input type="checkbox" id="manque_moyens" name="problemes" value="Manque de moyens">
+                <label for="manque_moyens">Manque de moyens</label><br>
+                <input type="checkbox" id="autre_probleme" name="problemes" value="Autre">
+                <label for="autre_probleme">Autre :</label>
+                <input type="text" id="autre_probleme_text" name="autre_probleme_text"><br><br>
+
+                <label for="ameliorations">Quelles améliorations souhaiteriez-vous voir mises en place ? (Cochez tout ce qui s’applique)</label><br>
+                <input type="checkbox" id="formation" name="ameliorations" value="Plus de formation pour les agents">
+                <label for="formation">Plus de formation pour les agents</label><br>
+                <input type="checkbox" id="effectifs" name="ameliorations" value="Augmentation des effectifs">
+                <label for="effectifs">Augmentation des effectifs</label><br>
+                <input type="checkbox" id="equipement" name="ameliorations" value="Meilleur équipement">
+                <label for="equipement">Meilleur équipement</label><br>
+                <input type="checkbox" id="dialogue" name="ameliorations" value="Renforcement du dialogue avec la population">
+                <label for="dialogue">Renforcement du dialogue avec la population</label><br>
+                <input type="checkbox" id="transparence" name="ameliorations" value="Plus de transparence et de contrôle">
+                <label for="transparence">Plus de transparence et de contrôle</label><br>
+                <input type="checkbox" id="autre_amelioration" name="ameliorations" value="Autre">
+                <label for="autre_amelioration">Autre :</label>
+                <input type="text" id="autre_amelioration_text" name="autre_amelioration_text"><br><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Commentaires et Suggestions</legend>
+                <label for="commentaires">Avez-vous des commentaires ou suggestions pour améliorer le fonctionnement de la police nationale ?</label><br>
+                <textarea id="commentaires" name="commentaires" rows="4" cols="50"></textarea><br><br>
+
+                <label for="file">Téléversez les fichiers justificatifs de corruption (formats acceptés : .jpg, .png, .pdf) :</label><br>
+                <input type="file" id="file" name="file" accept=".jpg, .jpeg, .png, .pdf"><br><br>
+            </fieldset>
+
+            <input type="submit" value="Soumettre">
+            <br>
+            <br>
+            <footer>
+                <p>&copy; <a href="https://www.example.com">Lionel Concept 03/2025</a></p>
+            </footer>
+        </form>
+
+        <div class="floating-images">
+            <img src="img/Police (2).jpg" alt="Image de police" class="floating-image"> <br>
+            <img src="img/Police (3).jpg" alt="Image de police" class="floating-image"> <br>
+            <img src="img/Police (4).jpg" alt="Image de police" class="floating-image"> <br>
+            <img src="img/Police (1).jpg" alt="Image de police" class="floating-image"> <br>
+        </div>
+    </div>
+
+
+</body>
+</html>

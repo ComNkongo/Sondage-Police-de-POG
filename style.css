@@ -1,0 +1,166 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7f6a2; /* Fond blanc pour le corps */
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Empêche le défilement horizontal global */
+}
+
+.container {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-image: url('img/FPN-gifmaker.gif');
+    background-repeat: no-repeat;
+    background-size: 700px; /* Ajuste la taille de l'image pour ne pas déborder */
+    background-position: center; /* Centre l'image */
+    overflow: hidden; /* Empêche le défilement horizontal dans le conteneur */
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 180px;
+    height: auto;
+    animation: spin 15s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.headline {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.subheadline {
+    font-size: 18px;
+    color: #666;
+}
+
+.glassmorphism-form {
+    background: rgba(2, 73, 131, 0.384);
+    /*background-image: url('img/your-image.jpg'); */ /* Utilisez l'image de votre choix */
+    background-size: cover;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px) brightness(0.8); /* Appliquez un flou et ajustez la luminosité */
+    -webkit-backdrop-filter: blur(10px) brightness(0.8); /* Pour les navigateurs Webkit */
+    max-width: 100%; /* Empêche le formulaire de dépasser la largeur du conteneur */
+    box-sizing: border-box; /* Inclut le padding et la bordure dans la largeur totale */
+}
+
+fieldset {
+    border: none;
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box; /* Inclut le padding et la bordure dans la largeur totale */
+}
+
+input[type="submit"] {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.floating-images {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.floating-image {
+    position: absolute;
+    width: 250px;
+    opacity: 0.65;
+    animation: float 20s linear infinite;
+}
+
+.floating-image:nth-child(1) {
+    animation-delay: 0s;
+    animation-direction: normal;
+}
+
+.floating-image:nth-child(2) {
+    animation-delay: 2.5s;
+    animation-direction: reverse;
+}
+
+.floating-image:nth-child(3) {
+    animation-delay: 5s;
+    animation-direction: normal;
+}
+
+.floating-image:nth-child(4) {
+    animation-delay: 7.5s;
+    animation-direction: reverse;
+}
+
+@keyframes float {
+    0% {
+        transform: translate(0, 0);
+    }
+    25% {
+        transform: translate(calc(100vw - 100px), 0);
+    }
+    50% {
+        transform: translate(calc(100vw - 100px), calc(100vh - 100px));
+    }
+    75% {
+        transform: translate(0, calc(100vh - 100px));
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .glassmorphism-form {
+        padding: 10px;
+    }
+
+    .headline {
+        font-size: 20px;
+    }
+
+    .subheadline {
+        font-size: 16px;
+    }
+}
